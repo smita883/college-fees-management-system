@@ -1,0 +1,38 @@
+# PHP
+*.php~
+*.swp
+*.swo
+*~
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Composer
+vendor/
+composer.lock
+
+# Environment
+.env
+.env.local
+
+# Logs
+logs/
+*.log
+
+# Temporary
+tmp/
+temp/
+
+# Database backups
+backups/*.sql
+
+# Session files
+session/
+
+# Node modules (if using npm)
+node_modules/
+package-lock.json
