@@ -1,38 +1,63 @@
-# PHP
-*.php~
-*.swp
-*.swo
-*~
-.DS_Store
+<?php
+/**
+ * .gitignore file
+ */
+
+# Environment files
+.env
+.env.local
+.env.*.local
 
 # IDE
 .vscode/
 .idea/
+*.swp
+*.swo
+*~
+.DS_Store
 *.sublime-project
 *.sublime-workspace
-
-# Composer
-vendor/
-composer.lock
-
-# Environment
-.env
-.env.local
 
 # Logs
 logs/
 *.log
 
-# Temporary
-tmp/
-temp/
+# Uploads
+uploads/
 
-# Database backups
-backups/*.sql
+# Composer
+vendor/
+composer.lock
 
 # Session files
-session/
+session_files/
 
-# Node modules (if using npm)
+# Cache
+cache/
+
+# Database backups
+*.sql
+!database/*.sql
+
+# Node modules (if using any frontend build tools)
 node_modules/
 package-lock.json
+yarn.lock
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Editor backups
+*.bak
+*.backup
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Configuration files with sensitive data
+app/config/database.php (if using local overrides)
+
+?>
